@@ -3,5 +3,11 @@ kind: Namespace
 metadata:
   name: spring-petclinic
 spec:
+  syncPolicy:
+    managedNamespaceMetadata:
+      labels: # The labels to set on the application namespace
+        any: argocd.argoproj.io/managed-by=openshift-gitops              
+    syncOptions:
+    - CreateNamespace=true
   finalizers:
   - kubernetes
