@@ -65,6 +65,7 @@ Enter the following details and click on **Create**.
 >  ```
 >  oc create -f argo/cluster.yaml
 >  ```
+>  ```
 >  oc label namespace spring-petclinic argocd.argoproj.io/managed-by=openshift-gitops
 > ```
 > Run the following to review the created application:
