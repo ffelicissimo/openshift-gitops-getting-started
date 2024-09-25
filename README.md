@@ -65,7 +65,7 @@ Enter the following details and click on **Create**.
 >  ```
 >  oc create -f argo/cluster.yaml
 >  ```
->  For ArgoCD to own namespace *"spring-petclinic"*, apply the label below
+>  For ArgoCD to own namespace **"spring-petclinic"**, apply the label below
 >  ```
 >  oc label namespace spring-petclinic argocd.argoproj.io/managed-by=openshift-gitops
 > ```
